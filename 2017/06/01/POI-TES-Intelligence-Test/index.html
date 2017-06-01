@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="BZOJ," />
 
 
 
@@ -90,15 +90,17 @@
 
 
 
-<meta name="description" content="不念过去,不畏将来">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Idvzchuscvol">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="BZOJ2083:[POI] TES-Intelligence Test给定一个数串，和m个小数串，问这些小串都是不是大数字串的子序列 思路用$vector$容器储存每一个数字的位置，记$last$保存当前序列$check$的值在母序列中的合法位置，二分查找$a_i$在母序列中的大于等于$last$的值，如果能找到这样的位置，继续$check$，如果找不到，即该序列不合法 时间复杂度$O(\sum">
+<meta name="keywords" content="BZOJ">
+<meta property="og:type" content="article">
+<meta property="og:title" content="POI TES-Intelligence Test">
+<meta property="og:url" content="http://yoursite.com/2017/06/01/POI-TES-Intelligence-Test/index.html">
 <meta property="og:site_name" content="Idvzchuscvol">
-<meta property="og:description" content="不念过去,不畏将来">
+<meta property="og:description" content="BZOJ2083:[POI] TES-Intelligence Test给定一个数串，和m个小数串，问这些小串都是不是大数字串的子序列 思路用$vector$容器储存每一个数字的位置，记$last$保存当前序列$check$的值在母序列中的合法位置，二分查找$a_i$在母序列中的大于等于$last$的值，如果能找到这样的位置，继续$check$，如果找不到，即该序列不合法 时间复杂度$O(\sum">
+<meta property="og:updated_time" content="2017-06-01T10:38:33.828Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Idvzchuscvol">
-<meta name="twitter:description" content="不念过去,不畏将来">
+<meta name="twitter:title" content="POI TES-Intelligence Test">
+<meta name="twitter:description" content="BZOJ2083:[POI] TES-Intelligence Test给定一个数串，和m个小数串，问这些小串都是不是大数字串的子序列 思路用$vector$容器储存每一个数字的位置，记$last$保存当前序列$check$的值在母序列中的合法位置，二分查找$a_i$在母序列中的大于等于$last$的值，如果能找到这样的位置，继续$check$，如果找不到，即该序列不合法 时间复杂度$O(\sum">
 
 
 
@@ -126,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/06/01/POI-TES-Intelligence-Test/"/>
 
 
 
 
 
-  <title>Idvzchuscvol</title>
+  <title>POI TES-Intelligence Test | Idvzchuscvol</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -158,9 +160,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -253,9 +253,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -281,9 +281,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/01/POI-TES-Intelligence-Test/" itemprop="url">POI TES-Intelligence Test</a></h1>
+          <h1 class="post-title" itemprop="name headline">POI TES-Intelligence Test</h1>
         
 
         <div class="post-meta">
@@ -330,161 +328,76 @@
       
 
       
-        
-          
-            <h4 id="BZOJ2083-POI-TES-Intelligence-Test"><a href="#BZOJ2083-POI-TES-Intelligence-Test" class="headerlink" title="BZOJ2083:[POI] TES-Intelligence Test"></a>BZOJ2083:[POI] TES-Intelligence Test</h4><p>给定一个数串，和m个小数串，问这些小串都是不是大数字串的子序列</p>
+        <h4 id="BZOJ2083-POI-TES-Intelligence-Test"><a href="#BZOJ2083-POI-TES-Intelligence-Test" class="headerlink" title="BZOJ2083:[POI] TES-Intelligence Test"></a>BZOJ2083:[POI] TES-Intelligence Test</h4><p>给定一个数串，和m个小数串，问这些小串都是不是大数字串的子序列</p>
 <h4 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h4><p>用$vector$容器储存每一个数字的位置，记$last$保存当前序列$check$的值在母序列中的合法位置，二分查找$a_i$在母序列中的大于等于$last$的值，如果能找到这样的位置，继续$check$，如果找不到，即该序列不合法</p>
 <p>时间复杂度$O(\sum{L}+n)$</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAXN = <span class="number">1000000</span>+<span class="number">10</span>;</div><div class="line"></div><div class="line"><span class="built_in">vector</span> &lt;<span class="keyword">int</span>&gt; v[MAXN];</div><div class="line"></div><div class="line"><span class="keyword">int</span> n,m,a,k;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">Read</span><span class="params">(<span class="keyword">int</span> &amp;x)</span></span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">int</span> in=<span class="number">0</span>,f=<span class="number">1</span>;<span class="keyword">char</span> ch=getchar();</div><div class="line">	<span class="keyword">while</span>(ch&lt;<span class="string">'0'</span>||ch&gt;<span class="string">'9'</span>)	&#123;<span class="keyword">if</span>(f==<span class="string">'-'</span>)f=<span class="number">-1</span>;ch=getchar();&#125;</div><div class="line">	<span class="keyword">while</span>(ch&gt;=<span class="string">'0'</span> &amp;&amp; ch&lt;=<span class="string">'9'</span>) &#123;in=in*<span class="number">10</span>+ch-<span class="string">'0'</span>;ch=getchar();&#125;</div><div class="line">	x=in*f;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	</div><div class="line">	Read(n);</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</div><div class="line">	&#123;</div><div class="line">		Read(a);</div><div class="line">		v[a].push_back(i);</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	Read(m);</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++)</div><div class="line">	&#123;</div><div class="line">		Read(k);</div><div class="line">	</div><div class="line">		<span class="keyword">bool</span> flag=<span class="number">1</span>;<span class="keyword">int</span> last=<span class="number">0</span>;</div><div class="line">		</div><div class="line">		<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;::iterator node;</div><div class="line">		</div><div class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=k;j++)</div><div class="line">		&#123;</div><div class="line">			Read(a);</div><div class="line">			<span class="keyword">if</span>(flag)</div><div class="line">			&#123;</div><div class="line">				node = upper_bound(v[a].begin(),v[a].end(),last);</div><div class="line">				<span class="keyword">if</span>(node == v[a].end() )	flag=<span class="number">0</span>;</div><div class="line">				<span class="keyword">else</span> last = *node;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">		</div><div class="line">		<span class="keyword">if</span>(flag)	<span class="built_in">puts</span>(<span class="string">"TAK"</span>);</div><div class="line">		<span class="keyword">else</span> <span class="built_in">puts</span>(<span class="string">"NIE"</span>);</div><div class="line">		</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">	</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/01/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Idvz">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Idvzchuscvol">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/01/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-01T14:38:26+08:00">
-                2017-06-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/BZOJ/" rel="tag"># BZOJ</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
         
-          
-            <p>这个博客放一些自己觉得有趣的题吧</p>
-<p>2017<br>idvz</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/06/01/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -492,6 +405,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -511,8 +428,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -565,6 +491,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#BZOJ2083-POI-TES-Intelligence-Test"><span class="nav-number">1.</span> <span class="nav-text">BZOJ2083:[POI] TES-Intelligence Test</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#思路"><span class="nav-number">2.</span> <span class="nav-text">思路</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -692,6 +634,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
 
   
 
